@@ -1,18 +1,20 @@
+import Header from 'components/header'
+import Hero from 'components/hero'
+import Footer from 'components/footer'
+
 const Home = () => {
-	return(
-		<>
-			<header>HEADER</header>
+        return(
+                <>
+			<Header />
 
-			<main>
-				<div>
-					<h1>CUBE</h1>
-					<p>アウトプットしていくサイト</p>
-				</div>
-			</main>
+				<main>
+                                	<Hero />
+				</main>
 
-			<footer>FOOTER</footer>
-		</>
-	)
+			<Footer />
+                </>
+        )
 }
 
 export default Home
+
