@@ -1,7 +1,8 @@
+import Logo from 'components/logo'
 const Footer = () => {
         return(
                 <footer>
-                        FOOT
+                        <Logo />
                 </footer>
         )
 }
