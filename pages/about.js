@@ -2,7 +2,10 @@ import Hero from 'components/hero'
 
 const About = () => {
 	return(
-		<Hero />
+		<Hero 
+			title="About"
+			subtitle="About development activities"
+		/>
 	)
 }
 

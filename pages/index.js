@@ -3,7 +3,11 @@ import Hero from 'components/hero'
 const Home = () => {
         return(
                 <>
-			<Hero />
+			<Hero 
+				title="CUBE"
+				subtitle="アウトプットしていくサイト"
+				imageOn
+			/>
                 </>
         )
 }
