@@ -3,9 +3,9 @@ import s from 'styles/social.module.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebookF, faGithub, } from '@fortawesome/free-brands-svg-icons'
 
-const Social = () => {
+const Social = ({ iconSize = 'initial' }) => {
 	return(
-		<ul className={s.list}>
+		<ul className={s.list} style={{ '--icon-size': iconSize }}>
 			<li>
 				<a href="https://twitter.com/">
 					<FontAwesomeIcon icon={faTwitter} />
