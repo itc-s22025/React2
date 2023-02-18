@@ -5,19 +5,20 @@ import Image from 'next/image'
 const Posts = ({ posts }) => {
 	return(
 		<div className={s.gridContainer}>
-			{posts.map(({ title, slug, eyecatch }) => (
+			{posts.map(({ title,slug,eyecatch }) => (
 				<article className={s.post} key={slug}>
 					<Link href={`/blog/${slug}`}>
 						<figure>
-							<Image 
-								src={eyecatch.url}
-								alt=""
-								layout="responsive"
-								width={eyecatch.width}
-								height={eyecatch.height}
-								placeholder="blur"
-								blurDataURL={eyecatch.blurDataURL}
-							/>
+						<Image 
+                                                                src={eyecatch.url}
+                                                                alt=""
+                                                                layout="fill"
+								objectFit="cover"
+								sizes="(min-width: 1152px) 576px, 50vw"
+                                                                placeholder="blur"
+                                                                blurDataURL={eyecatch.blurDataURL}
+						/>
+
 						</figure>
 						<h2>{title}</h2>
 					</Link>
