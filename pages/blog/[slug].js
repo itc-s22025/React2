@@ -30,6 +30,7 @@ export default function Post({ title, publish, content, eyecatch, categories, de
 				
 				<figure>
 					<Image
+						key={eyecatch.url}
 						src={eyecatch.url}
 						alt=""
 						layout="responsive"
