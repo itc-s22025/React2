@@ -5,8 +5,15 @@ import PostBody from 'components/post-body'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 import Accordion from 'components/accordion'
 import Image from 'next/image'
-import eyecatch from 'images/about.jpg'
+//import eyecatch from 'images/about.jpg'
 import Contact from 'components/contact'
+
+const eyecatch = {
+	src: 'https://images.microcms-assets.io/assets/2527a9f74810444fa3c87e0c33235196/295c6e7f5e3a4829952306a8a8fcc38d/about.jpg',
+	height: 960,
+	width: 1920,
+	blurDataURL: 'data:image/jpeg;base64',
+}
 
 const About = () => {
 	return(
